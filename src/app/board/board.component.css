@@ -1,0 +1,38 @@
+
+.container{
+width:max-content;
+margin:auto;
+}
+
+.board{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px;
+    background-color: rgb(10, 2, 48);
+    width: 600px;
+    height: 600px;
+
+}
+
+.box{
+flex:1 1 30%;
+}
+
+h1,h2{
+color: #072f58;
+text-align:center;
+}
+
+.restartButton {
+    background: tomato;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+.disable{
+    pointer-events: none; opacity: 0.75;
+}
+

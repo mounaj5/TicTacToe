@@ -1,0 +1,21 @@
+
+.btn{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid rgb(56, 106, 115);
+    background-color: #072f58;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    font-size: large;
+    color:white;
+    }
+    
+    .btn:hover {
+        transform: scale(1.01);
+        box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+        background-color: #063d74;
+        cursor:pointer;
+      }

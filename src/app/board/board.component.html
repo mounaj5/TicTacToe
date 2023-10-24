@@ -1,0 +1,22 @@
+
+<div class = 'container'>
+    <h1> TIC TAC TOE </h1>
+    <h2 [ngStyle] = "{'display': this.winner ? 'none':''}"> Current player {{player}}</h2>
+    <button  class = "restartButton" (click)="startGame()" [ngStyle] = "{ 'display' : this.winner ? '' : 'none' }">
+        {{this.winner ? 'Restart' : 'Start'}} </button>
+    
+    <h2 *ngIf="winner">Winner : {{winner}} </h2>
+    
+    <div class="board" [ngClass] = "this.winner ? 'disable' : ''">
+     
+        <app-box *ngFor="let item of board;let i=index" class="box "
+        [player] = 'item'
+        (click) = makeMove(i)>
+    </app-box>
+    
+      
+    </div>
+</div>
+
+
+
